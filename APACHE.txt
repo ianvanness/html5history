@@ -1,0 +1,10 @@
+<VirtualHost *:80>
+    ServerName {hostname}
+    DocumentRoot {rootdir}
+
+    RewriteEngine   On
+    ## this is for pulling data properly for permalinks
+    RewriteCond {rootdir}%{REQUEST_FILENAME} !-f
+    RewriteRule ^/(.*)$ /index.php?p=$1 [QSA,L]
+
+</VirtualHost>
