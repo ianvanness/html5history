@@ -8,7 +8,7 @@
 <!-- Only for using #! in non html5history browsers -->
 <!--<script type="text/javascript" src="/assets/jquery.ba-hashchange.js"></script>-->
 <script type="text/javascript" charset="utf-8">
-    <?php if( intval($_GET['p'] ) > 0 ) { ?>
+    <?php if( isset( $_GET['p'] ) && intval($_GET['p'] ) > 0 ) { ?>
     var initialParams = '<?php print intval($_GET['p']); ?>';
     <?php } else { ?>
     var initialParams = '-1';
