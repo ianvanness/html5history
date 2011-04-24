@@ -18,11 +18,12 @@ jQuery(document).ready( function() {
     		page = jQuery(this).attr('href').replace(ajax_replacee,ajax_replacer);
     		oldData = jQuery(content_area).html();
     		jQuery(content_area).load(page, function(n){
-		    if( initialParams ) {
-		        history.replaceState(initialParams, '');
-                initialParams = null; 
-		    }
-		    history.pushState(page.replace(ajax_replacer,''), document.title, page.replace(ajax_replacer,''));
+    		    // initial page state, if set (ex: landed on a permalink page)
+    		    if( initialParams ) {
+    		        history.replaceState(initialParams, '');
+                    initialParams = null; 
+    		    }
+    		    history.pushState(page.replace(ajax_replacer,''), document.title, page.replace(ajax_replacer,''));
     		});
 		    e.preventDefault();
     		e.stopPropagation();
