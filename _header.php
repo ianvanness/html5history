@@ -2,8 +2,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>great strange dream</title>
-<meta name="description" content="great strange dream" />
+<title>html5history</title>
+<meta name="description" content="html5history" />
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
 <!-- Only for using #! in non html5history browsers -->
 <!--<script type="text/javascript" src="/assets/jquery.ba-hashchange.js"></script>-->
